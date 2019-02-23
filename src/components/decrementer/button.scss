@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+
+$spaciousness: 1em;
+$doublespaciousness: 2em;
+$sanserif: "Nanum Gothic", sans-serif;
+$main: #dffde6;
+$buttontext: #333;
+$text: #246632;
+
+button {
+  background-color: $main;
+  font-size: $doublespaciousness;
+  font-family: $sanserif;
+  border: none;
+  padding-left: ($spaciousness/2);
+  padding-right: ($spaciousness/2);
+  color: $text;
+  border-radius: 0.2em;
+}
