@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
 $spaciousness: 1em;
 $doublespaciousness: 2em;
-$sanserif: "Nanum Gothic", sans-serif;
-$main: #59c971;
+$sanserif: "Oswald", sans-serif;
+$main: #69be28;
 
 .number {
-  font-size: ($doublespaciousness * 10);
+  font-size: ($doublespaciousness * 5);
   font-family: $sanserif;
   color: $main;
   padding: ($spaciousness/5);

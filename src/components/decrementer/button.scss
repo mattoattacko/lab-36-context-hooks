@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
-$spaciousness: 1em;
-$doublespaciousness: 2em;
-$sanserif: "Nanum Gothic", sans-serif;
+$spaciousness: 2em;
+$doublespaciousness: 2.5em;
+$sanserif: "Oswald", sans-serif;
 $main: #dffde6;
-$buttontext: #333;
-$text: #246632;
+$buttontext: #69be28;
+$text: #69be28;
 
 button {
   background-color: $main;
