@@ -1,3 +1,9 @@
+## Lab 36 - Context and Hooks
+
+- [Back End](https://codesandbox.io/s/ol6lynpj66)
+- [Front End](https://ol6lynpj66.codesandbox.io/)
+- [Repo](https://github.com/mattoattacko/lab-36-context-hooks)
+
 Implement a Context Provider and Consumer
 Create a React application that wraps the entire <App/> with a context provider, created using Context API. Then, create multiple components that act as consumers to your context, using it in various ways.
 
