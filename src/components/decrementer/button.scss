@@ -8,7 +8,9 @@ $buttontext: #69be28;
 $text: #69be28;
 
 button {
-  background-color: $main;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
   font-size: $doublespaciousness;
   font-family: $sanserif;
   border: none;
@@ -18,3 +20,10 @@ button {
   color: $text;
   border-radius: 0.2em;
 }
+
+// background-color: ;
+//
+// border: none;
+// cursor:pointer;
+//
+// outline:none;

@@ -6,8 +6,11 @@ $sanserif: "Oswald", sans-serif;
 $main: #69be28;
 
 .number {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
   font-size: ($doublespaciousness * 5);
   font-family: $sanserif;
   color: $main;
-  padding: ($spaciousness/2);
+  // padding: ($spaciousness/2);
 }
