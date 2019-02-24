@@ -9,7 +9,7 @@ class Decrementer extends React.Component {
         {context => {
           return (
             <button className="decrement" onClick={() => context.decrement()}>
-              -
+              ↓
             </button>
           );
         }}

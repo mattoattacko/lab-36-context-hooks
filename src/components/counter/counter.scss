@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
-$spaciousness: 1em;
+$spaciousness: 0.1em;
 $doublespaciousness: 2em;
 $sanserif: "Oswald", sans-serif;
 $main: #69be28;
@@ -9,5 +9,5 @@ $main: #69be28;
   font-size: ($doublespaciousness * 5);
   font-family: $sanserif;
   color: $main;
-  padding: ($spaciousness/5);
+  padding: ($spaciousness/2);
 }
