@@ -4,26 +4,70 @@
 - [Front End](https://ol6lynpj66.codesandbox.io/)
 - [Repo](https://github.com/mattoattacko/lab-36-context-hooks)
 
-Implement a Context Provider and Consumer
-Create a React application that wraps the entire <App/> with a context provider, created using Context API. Then, create multiple components that act as consumers to your context, using it in various ways.
+### Modules
 
-Specifically, build a counter that uses 3 separate components that subscribe to a common provider
+#### `index.js`
 
-Requirements
-Create a Counter Provider component, which exposes the following state:
-count - A number (default to 0)
-increment - A reference to a function that increases the count
-decrement - A reference to a function that decreases the count
-In the index.js, import CounterContext and wrap <App /> in it, so that all child components can optionally subscribe to it as consumers.
-Your <App /> component should simply pull in and render the following child components ...
-Create the following child components that register as a .Consumer to the provided context.
-<Incrementer /> - Renders a button that, when clicked, calls the increment() method in the Counter Provider
-<Decrementer /> - Renders a button that, when clicked, calls the decrement() method in the Counter Provider
-<Counter /> - Renders the current value of count from the Counter Provider
-Provide good styling. Use the css-in-js methodology within the components themselves.
-Testing
-Do a deep mount of the app, and set tests to make assertions on the child components that consume context from the Provider.
-Can they see context?
-Can they interact via published functions?
-Documentation
-Complete the README.md file included in the lab folder
+###### `CLASS Main'
+
+--> App Component
+
+#### `app.js`
+
+###### `CLASS App'
+
+--> Decrementer Component
+
+--> Counter Component
+
+--> Incrementer Component
+
+#### `settings/counter-context.js`
+
+###### `CLASS SettingsProvider'
+
+--> SettingsContext.Provider Component
+
+###### `constructor()`
+
+<-- props
+
+Sets the state { count, increment, decrement }
+
+###### `increment()`
+
+<-- event
+
+Sets: this.state.count
+
+###### `decrement()`
+
+<-- event
+
+Sets: this.state.count
+
+#### `components/counter/counter.js`
+
+###### `CLASS Counter`
+
+--> SettingsContext.Consumer which wraps the context.count span
+
+#### `components/decrementer/decrementer.js`
+
+###### `CLASS Decrementer`
+
+--> SettingsContext.Consumer which wraps the decrementer button
+
+#### `components/decrementer/incrementer.js`
+
+###### `CLASS Incrementer`
+
+--> SettingsContext.Consumer which wraps the incrementer button
+
+#### Tests
+
+I asserted that the tags that are supposed to render on each component are actually recognized by the application. I am having trouble testing components that are wrapped in <SettingsContext.Consumer>. I have done a lot of reasearch on it and found a [good article](https://medium.com/@ryandrewjohnson/unit-testing-components-using-reacts-new-context-api-4a5219f4b3fe) but can't get it to work.
+
+#### UML
+
+[Link to UML](assets/lab35-uml.jpg)
